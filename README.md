@@ -3,9 +3,11 @@
 <!-- BADGES_START -->
 [![Latest Version][badge-release]][packagist]
 [![PHP Version][badge-php]][php]
+[![Tests][badge-tests]][tests]
 ![tests](https://github.com/http-php/headers/workflows/tests/badge.svg)
 [![Total Downloads][badge-downloads]][downloads]
 
+[badge-tests]: https://github.com/http-php/headers/actions/workflows/test.yml/badge.svg
 [badge-release]: https://img.shields.io/packagist/v/http-php/headers.svg?style=flat-square&label=release
 [badge-php]: https://img.shields.io/packagist/php-v/http-php/headers.svg?style=flat-square
 [badge-downloads]: https://img.shields.io/packagist/dt/http-php/headers.svg?style=flat-square&colorB=mediumvioletred
@@ -13,6 +15,7 @@
 [packagist]: https://packagist.org/packages/http-php/headers
 [php]: https://php.net
 [downloads]: https://packagist.org/packages/http-php/headers
+[tests]: https://github.com/http-php/headers/actions/workflows/test.yml
 <!-- BADGES_END -->
 
 This package is to allow you to create HTTP Headers in PHP, in a simple and reliable way.
