@@ -29,8 +29,8 @@ final class Collection implements HeaderCollectionContract
     }
 
     /**
-     * @param array<int,array<string,string>> $array
-     * @return array<string,string>
+     * @param array<int, array<string,string>> $array
+     * @return array<int|string, mixed>
      */
     public function flatten(array $array): array
     {
@@ -40,7 +40,7 @@ final class Collection implements HeaderCollectionContract
             if (is_array($value)) {
                 $result = array_merge(
                     $result,
-                    $this->flatten(array: $value),
+                    $value,
                 );
             } else {
                 $result = array_merge(
