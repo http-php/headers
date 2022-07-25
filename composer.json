@@ -1,0 +1,55 @@
+{
+  "name": "http-php/headers",
+  "description": "A simple OOP wrapper to work with HTTP headers in PHP",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "role": "Developer",
+      "name": "Steve McDougall",
+      "email": "juststevemcd@gmail.com",
+      "homepage": "https://www.juststeveking.uk/"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "HttpPHP\\Headers\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "HttpPHP\\Headers\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": "^8.1"
+  },
+  "require-dev": {
+    "laravel/pint": "^1.0",
+    "pestphp/pest": "^1.21",
+    "phpstan/phpstan": "^1.8",
+    "symfony/var-dumper": "^6.1"
+  },
+  "scripts": {
+    "test": "./vendor/bin/pest",
+    "fix": "./vendor/bin/pint",
+    "check": "./vendor/bin/pint --test -v",
+    "static": "./vendor/bin/phpstan analyse",
+    "all": [
+      "@test",
+      "@fix",
+      "@check",
+      "@static"
+    ]
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
+}
