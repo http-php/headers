@@ -4,7 +4,6 @@
 [![Latest Version][badge-release]][packagist]
 [![PHP Version][badge-php]][php]
 [![Tests][badge-tests]][tests]
-![tests](https://github.com/http-php/headers/workflows/tests/badge.svg)
 [![Total Downloads][badge-downloads]][downloads]
 
 [badge-tests]: https://github.com/http-php/headers/actions/workflows/test.yml/badge.svg
